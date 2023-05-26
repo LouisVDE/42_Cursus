@@ -18,7 +18,7 @@ For the bonuses
 ```
 make bonus
 ```
-To delete files do :
+To delete .o and .a files do :
 ```
 make clean
 ```
