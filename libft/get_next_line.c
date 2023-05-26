@@ -6,11 +6,11 @@
 /*   By: lovanden <lovanden@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/04 14:51:04 by lovanden          #+#    #+#             */
-/*   Updated: 2023/04/15 13:45:33 by lovanden         ###   ########.fr       */
+/*   Updated: 2023/05/26 14:06:31 by lovanden         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "libft.h"
 
 static char	*ft_clear(char *buff)
 {

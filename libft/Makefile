@@ -39,7 +39,9 @@ SRCS = ft_strlen.c		\
 	   ft_putchar.c		\
 	   ft_putstr.c		\
 	   ft_printf.c		\
-	   ft_for.c
+	   ft_for.c			\
+	   get_next_line.c	\
+	   ft_join.c 		\
 
 SRCS_BONUS = ft_lstnew_bonus.c	\
 	   ft_lstadd_front_bonus.c	\

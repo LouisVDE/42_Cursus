@@ -6,7 +6,7 @@
 /*   By: lovanden <lovanden@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/03 13:38:45 by lovanden          #+#    #+#             */
-/*   Updated: 2023/05/17 15:38:25 by lovanden         ###   ########.fr       */
+/*   Updated: 2023/05/26 14:07:08 by lovanden         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,22 @@
 # include <stdlib.h>
 # include <unistd.h>
 
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 5
+# endif
+# if BUFFER_SIZE > 99999 || BUFFER_SIZE < 1
+#  undef BUFFER_SIZE
+#  define BUFFER_SIZE 500
+# endif
+
 typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
 }					t_list;
 
+char				*get_next_line(int fd);
+char				*ft_join(char *s1, const char *s2);
 int					ft_printf(const char *format, ...);
 int					ft_putchar(char c);
 size_t				ft_putnbr(long int n);
